@@ -1,0 +1,2280 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI動画×YouTube広告収益 完全攻略カリキュラム｜全12回・3ヶ月集中プログラム</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg-primary: #000000;
+  --bg-secondary: #0a0a0a;
+  --bg-card: #111111;
+  --bg-card-hover: #1a1a1a;
+  --accent: #ffffff;
+  --accent-light: #e0e0e0;
+  --accent-glow: rgba(255, 255, 255, 0.15);
+  --gold: #ffffff;
+  --gold-light: #d0d0d0;
+  --text-primary: #ffffff;
+  --text-secondary: #999999;
+  --text-muted: #555555;
+  --border: rgba(255,255,255,0.08);
+  --gradient-accent: linear-gradient(135deg, #ffffff, #cccccc);
+  --gradient-hero: linear-gradient(180deg, #000000 0%, #0a0a0a 100%);
+  --radius: 12px;
+  --radius-lg: 20px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+/* ===== UTILITY ===== */
+.container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+.section { padding: 80px 0; }
+.section-dark { background: var(--bg-secondary); }
+.text-center { text-align: center; }
+.text-accent { color: var(--accent-light); }
+.text-gold { color: var(--gold); }
+.text-muted { color: var(--text-secondary); }
+.small { font-size: 0.85rem; color: var(--text-muted); }
+.badge {
+  display: inline-block;
+  background: transparent;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 20px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+.divider {
+  width: 60px; height: 1px;
+  background: rgba(255,255,255,0.3);
+  margin: 20px auto;
+  border-radius: 2px;
+}
+
+/* ===== HEADER ===== */
+header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(10,10,15,0.85);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0;
+}
+header .container {
+  display: flex; justify-content: space-between; align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem; font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+}
+.logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+.logo-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+.logo-img.no-border {
+  background: none;
+  padding: 0;
+}
+.logo-img.no-border img {
+  object-fit: contain;
+}
+.header-cta {
+  font-size: 0.8rem; color: #ffffff;
+  text-decoration: none; border: 1px solid rgba(255,255,255,0.4);
+  padding: 6px 16px; border-radius: 6px;
+  transition: all 0.3s;
+}
+.header-cta:hover { background: #ffffff; color: #000000; }
+
+/* ===== CTA BUTTON ===== */
+.cta-btn {
+  display: inline-block;
+  background: #ffffff;
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 18px 48px;
+  border-radius: 60px;
+  text-decoration: none;
+  transition: all 0.3s;
+  box-shadow: 0 4px 30px rgba(255,255,255,0.1);
+  letter-spacing: 0.04em;
+}
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 40px rgba(255,255,255,0.2);
+}
+.cta-btn .price { display: block; font-size: 0.85rem; font-weight: 400; margin-top: 4px; opacity: 0.7; color: #333; }
+.cta-sub {
+  margin-top: 12px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* ===== HERO ===== */
+.hero {
+  padding: 140px 0 80px;
+  background: var(--gradient-hero);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+  background: radial-gradient(circle at 50% 30%, rgba(255,255,255,0.04) 0%, transparent 50%);
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0; height: 200px;
+  background: linear-gradient(to top, var(--bg-primary), transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+.hero-eyecatch {
+  font-size: 0.85rem;
+  color: var(--accent-light);
+  letter-spacing: 0.15em;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+.hero h1 {
+  font-size: clamp(1.6rem, 5vw, 2.6rem);
+  font-weight: 900;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+.hero h1 .highlight {
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+  border-bottom: 2px solid rgba(255,255,255,0.4);
+  padding-bottom: 2px;
+}
+.hero-sub {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+}
+.hero-meta {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;
+  margin-bottom: 40px;
+}
+.hero-meta-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 0.85rem;
+  min-width: 140px;
+}
+.hero-meta-item .label { color: var(--text-muted); font-size: 0.72rem; display: block; margin-bottom: 2px; }
+.hero-meta-item .value { font-weight: 700; color: var(--text-primary); }
+.hero-meta-item .value.price-value { color: var(--gold); font-size: 1.1rem; }
+
+/* ===== HERO VIDEO ===== */
+.hero-video {
+  max-width: 720px;
+  margin: 40px auto 40px;
+}
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 アスペクト比 */
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: var(--radius-lg);
+}
+.video-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--bg-card), var(--bg-card-hover));
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.video-placeholder:hover {
+  background: linear-gradient(135deg, var(--bg-card-hover), var(--bg-card));
+}
+.video-placeholder .play-button {
+  width: 80px;
+  height: 80px;
+  background: var(--gradient-accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 20px var(--accent-glow);
+}
+.video-placeholder:hover .play-button {
+  transform: scale(1.1);
+}
+.video-placeholder p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
+}
+
+/* ===== REVIEWS ===== */
+/* ===== TESTIMONIALS (受講者の声 - 動画付き) ===== */
+.testimonials-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-top: 40px;
+}
+.testimonial-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: border-color 0.4s, box-shadow 0.4s;
+}
+.testimonial-item:hover {
+  border-color: rgba(255,255,255,0.15);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+}
+.testimonial-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  position: relative;
+}
+.testimonial-video video,
+.testimonial-video iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+  border: none;
+}
+.testimonial-content {
+  padding: 28px 32px 32px;
+}
+.testimonial-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 4px;
+  padding: 3px 12px;
+  margin-bottom: 14px;
+}
+.testimonial-heading {
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
+  font-weight: 900;
+  line-height: 1.5;
+  margin-bottom: 14px;
+  color: var(--text-primary);
+}
+.testimonial-heading .highlight {
+  color: #ffffff;
+}
+.testimonial-body {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.testimonial-body .result-line {
+  display: block;
+  margin-top: 10px;
+  font-weight: 700;
+  color: var(--gold-light);
+  font-size: 0.85rem;
+}
+.testimonial-body .check {
+  color: var(--accent-light);
+  margin-right: 4px;
+}
+@media (max-width: 600px) {
+  .testimonial-content { padding: 20px; }
+  .testimonials-list { gap: 32px; }
+}
+
+/* ===== PAIN POINTS (悩み訴求) ===== */
+.pain-section {
+  background: var(--bg-secondary);
+  position: relative;
+  overflow: hidden;
+}
+.pain-section::before {
+  content: '';
+  position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+  width: 800px; height: 400px;
+  background: radial-gradient(ellipse, rgba(255,255,255,0.03) 0%, transparent 70%);
+  pointer-events: none;
+}
+.pain-heading {
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  font-weight: 900;
+  margin-bottom: 48px;
+  line-height: 1.5;
+}
+.pain-heading .em {
+  color: #ffffff;
+  font-style: normal;
+}
+
+/* 4コマ画像レイアウト */
+.pain-visual-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+.pain-visual-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.02);
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.4s, box-shadow 0.4s;
+}
+.pain-visual-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  border-color: rgba(255,255,255,0.2);
+  box-shadow: 0 16px 48px rgba(255,255,255,0.05), 0 8px 24px rgba(0,0,0,0.3);
+}
+.pain-visual-card .pain-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+.pain-visual-card .pain-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), filter 0.4s;
+  filter: brightness(0.85);
+}
+.pain-visual-card:hover .pain-img-wrap img {
+  transform: scale(1.05);
+  filter: brightness(0.95);
+}
+.pain-visual-card .pain-img-overlay {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: linear-gradient(to top, rgba(10,10,15,0.95) 0%, rgba(10,10,15,0.7) 40%, transparent 100%);
+  padding: 60px 20px 20px;
+  pointer-events: none;
+}
+.pain-visual-card .pain-number {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 4px;
+  padding: 2px 10px;
+  margin-bottom: 8px;
+}
+.pain-visual-card .pain-title {
+  font-size: clamp(0.9rem, 2vw, 1.05rem);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.5;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+.pain-visual-card .pain-desc {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.65);
+  margin-top: 6px;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .pain-visual-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+.pain-answer {
+  background: var(--bg-card);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.pain-answer h3 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-bottom: 12px;
+  color: var(--accent-light);
+}
+.pain-answer p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* ===== INTRO (2-col: text + gallery) ===== */
+.intro-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+@media (max-width: 768px) { .intro-layout { grid-template-columns: 1fr; } }
+.intro-text p { margin-bottom: 20px; color: var(--text-secondary); font-size: 0.92rem; }
+.intro-text h2 { text-align: left; margin-bottom: 20px; }
+
+/* Gallery Grid — reference site style mosaic */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 140px;
+  gap: 5px;
+}
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  background: var(--bg-card);
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease, filter 0.5s ease;
+  filter: brightness(0.85);
+}
+.gallery-item:hover img {
+  transform: scale(1.08);
+  filter: brightness(1);
+}
+/* Mosaic layout — span certain items for visual interest */
+.gallery-item:nth-child(1) { grid-row: span 2; }
+.gallery-item:nth-child(6) { grid-column: span 2; }
+.gallery-item:nth-child(10) { grid-column: span 2; }
+
+/* ===== FIT / UNFIT ===== */
+.fit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 40px;
+}
+@media (max-width: 640px) { .fit-grid { grid-template-columns: 1fr; } }
+.fit-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+}
+.fit-box h3 { font-size: 1.1rem; margin-bottom: 20px; }
+.fit-box.good h3 { color: #ffffff; }
+.fit-box.bad h3 { color: #666666; }
+.fit-box ul { list-style: none; }
+.fit-box ul li {
+  padding: 8px 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  padding-left: 24px;
+  position: relative;
+}
+.fit-box.good ul li::before { content: '✓'; position: absolute; left: 0; color: #ffffff; font-weight: 700; }
+.fit-box.bad ul li::before { content: '✗'; position: absolute; left: 0; color: #555555; font-weight: 700; }
+
+/* ===== BENEFITS ===== */
+.benefits-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+.benefit-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  transition: border-color 0.3s;
+}
+.benefit-item:hover { border-color: rgba(255,255,255,0.15); }
+.benefit-icon {
+  width: 44px; height: 44px; min-width: 44px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem;
+  filter: brightness(1.2);
+}
+.benefit-item h4 { font-size: 0.95rem; margin-bottom: 4px; }
+.benefit-item p { font-size: 0.82rem; color: var(--text-secondary); }
+
+/* ===== PHASE / CURRICULUM ===== */
+.phase-header {
+  display: flex; align-items: center; gap: 16px;
+  margin-bottom: 28px; margin-top: 48px;
+}
+.phase-header:first-of-type { margin-top: 0; }
+.phase-num {
+  background: #ffffff;
+  color: #000000;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 20px;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+.phase-header h3 { font-size: 1.2rem; font-weight: 700; }
+.phase-header .phase-desc { font-size: 0.85rem; color: var(--text-muted); }
+
+/* Phase visual image */
+.phase-visual {
+  margin-bottom: 28px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.3);
+}
+.phase-visual img {
+  width: 100%;
+  filter: brightness(0.9);
+  display: block;
+}
+
+.week-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+.week-toggle {
+  width: 100%;
+  background: none; border: none; color: var(--text-primary);
+  padding: 20px 28px;
+  font-size: 0.95rem; font-weight: 700;
+  text-align: left; cursor: pointer;
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: inherit;
+  transition: background 0.2s;
+}
+.week-toggle:hover { background: var(--bg-card-hover); }
+.week-toggle .arrow { font-size: 0.8rem; color: var(--text-muted); transition: transform 0.3s; }
+.week-card.open .week-toggle .arrow { transform: rotate(180deg); }
+.week-body {
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 28px;
+}
+.week-card.open .week-body {
+  max-height: 800px;
+  padding: 0 28px 24px;
+}
+.week-body h5 { font-size: 0.82rem; color: var(--accent-light); margin-bottom: 8px; margin-top: 14px; letter-spacing: 0.04em; }
+.week-body ul { list-style: none; }
+.week-body ul li {
+  font-size: 0.85rem; color: var(--text-secondary);
+  padding: 4px 0 4px 18px; position: relative;
+}
+.week-body ul li::before { content: '•'; position: absolute; left: 0; color: var(--accent-light); }
+.week-body .task {
+  margin-top: 14px; padding: 12px 16px;
+  background: rgba(255,255,255,0.04);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  font-size: 0.84rem; color: var(--text-secondary);
+}
+.week-body .task strong { color: var(--accent-light); }
+
+/* ===== TOOLS TABLE ===== */
+.tools-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 32px;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.tools-table th, .tools-table td {
+  padding: 14px 20px;
+  text-align: left;
+  font-size: 0.88rem;
+  border-bottom: 1px solid var(--border);
+}
+.tools-table th {
+  background: rgba(255,255,255,0.05);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+}
+.tools-table td { color: var(--text-secondary); }
+.tools-table tr:last-child td { border-bottom: none; }
+
+/* ===== MILESTONE ===== */
+.milestone-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+@media (max-width: 640px) { .milestone-grid { grid-template-columns: 1fr; } }
+.milestone-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  text-align: center;
+}
+.milestone-card .month {
+  display: inline-block;
+  background: #ffffff;
+  color: #000000;
+  font-size: 0.75rem; font-weight: 700;
+  padding: 4px 14px; border-radius: 20px;
+  margin-bottom: 16px;
+}
+.milestone-card h4 { font-size: 1.5rem; font-weight: 900; margin-bottom: 4px; }
+.milestone-card .kpi { font-size: 0.82rem; color: var(--text-muted); }
+.milestone-card .goal { margin-top: 12px; font-size: 0.88rem; color: var(--gold); font-weight: 700; }
+
+/* ===== SUPPORT ===== */
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 40px;
+}
+.support-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+.support-item h4 { font-size: 0.92rem; margin-bottom: 8px; color: var(--text-primary); }
+.support-item p { font-size: 0.82rem; color: var(--text-secondary); }
+
+/* ===== INSTRUCTOR ===== */
+.instructor-box {
+  display: flex; gap: 32px; align-items: flex-start;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  margin-top: 40px;
+}
+@media (max-width: 640px) { .instructor-box { flex-direction: column; } }
+.instructor-photo {
+  width: 140px; height: 140px; min-width: 140px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2.5rem; color: #fff;
+  overflow: hidden;
+}
+.instructor-info h3 { font-size: 1.2rem; margin-bottom: 4px; }
+.instructor-info .title { font-size: 0.82rem; color: var(--accent-light); margin-bottom: 16px; }
+.instructor-info p { font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 12px; }
+
+/* ===== FAQ ===== */
+.faq-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.faq-q {
+  width: 100%; background: none; border: none;
+  color: var(--text-primary);
+  padding: 20px 28px;
+  font-size: 0.92rem; font-weight: 700;
+  text-align: left; cursor: pointer;
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: inherit;
+  transition: background 0.2s;
+}
+.faq-q:hover { background: var(--bg-card-hover); }
+.faq-q .arrow { font-size: 0.8rem; color: var(--text-muted); transition: transform 0.3s; }
+.faq-item.open .faq-q .arrow { transform: rotate(180deg); }
+.faq-a {
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 28px;
+}
+.faq-item.open .faq-a {
+  max-height: 400px;
+  padding: 0 28px 24px;
+}
+.faq-a p { font-size: 0.88rem; color: var(--text-secondary); }
+
+/* ===== FINAL CTA ===== */
+.final-cta {
+  padding: 80px 0;
+  text-align: center;
+  background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+  position: relative;
+}
+.final-cta::before {
+  content: '';
+  position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+.final-cta h2 { font-size: clamp(1.3rem, 4vw, 2rem); font-weight: 900; margin-bottom: 16px; line-height: 1.5; }
+
+/* ===== FOOTER ===== */
+footer {
+  padding: 40px 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+footer p { font-size: 0.78rem; color: var(--text-muted); }
+footer nav { margin-top: 12px; }
+footer nav a {
+  color: var(--text-muted); text-decoration: none;
+  font-size: 0.75rem; margin: 0 10px;
+  transition: color 0.2s;
+}
+footer nav a:hover { color: var(--accent-light); }
+
+/* ===== SECTION HEADINGS ===== */
+.section-heading { font-size: clamp(1.3rem, 4vw, 1.8rem); font-weight: 900; margin-bottom: 8px; line-height: 1.4; }
+.section-subheading { font-size: 0.9rem; color: var(--text-secondary); max-width: 640px; margin: 0 auto 16px; }
+
+/* ===== CTA BLOCK (reusable) ===== */
+.cta-block {
+  text-align: center;
+  padding: 48px 0;
+}
+.cta-block .urgency {
+  font-size: 0.85rem;
+  color: var(--gold);
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+/* ===== REFRAME VIDEO SECTION ===== */
+.reframe-section {
+  position: relative;
+  overflow: hidden;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reframe-video-bg {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  z-index: 0;
+}
+.reframe-video-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.reframe-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: radial-gradient(ellipse at center, rgba(10,10,15,0.55) 0%, rgba(10,10,15,0.88) 70%, rgba(10,10,15,0.95) 100%);
+  z-index: 1;
+}
+.reframe-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 80px 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.reframe-content .section-heading {
+  text-shadow: 0 2px 20px rgba(0,0,0,0.6);
+}
+.reframe-content .cta-btn {
+  position: relative;
+  z-index: 3;
+}
+/* Entrance animation for reframe */
+.reframe-section.visible .reframe-content {
+  animation: heroFadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+}
+.reframe-section.visible .reframe-video-bg video {
+  animation: reframeZoom 20s ease-in-out infinite alternate;
+}
+@keyframes reframeZoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+/* ===== STORY ===== */
+.story-section p {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  max-width: 720px;
+  margin: 0 auto 18px;
+}
+
+/* ===== ANIMATIONS ===== */
+
+/* --- Scroll-reveal base --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Stagger children */
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-stagger.visible > *:nth-child(1) { transition-delay: 0.05s; }
+.reveal-stagger.visible > *:nth-child(2) { transition-delay: 0.12s; }
+.reveal-stagger.visible > *:nth-child(3) { transition-delay: 0.19s; }
+.reveal-stagger.visible > *:nth-child(4) { transition-delay: 0.26s; }
+.reveal-stagger.visible > *:nth-child(5) { transition-delay: 0.33s; }
+.reveal-stagger.visible > *:nth-child(6) { transition-delay: 0.40s; }
+.reveal-stagger.visible > *:nth-child(7) { transition-delay: 0.47s; }
+.reveal-stagger.visible > *:nth-child(8) { transition-delay: 0.54s; }
+.reveal-stagger.visible > *:nth-child(9) { transition-delay: 0.61s; }
+.reveal-stagger.visible > *:nth-child(10) { transition-delay: 0.68s; }
+.reveal-stagger.visible > *:nth-child(11) { transition-delay: 0.75s; }
+.reveal-stagger.visible > *:nth-child(12) { transition-delay: 0.82s; }
+.reveal-stagger.visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scale-up reveal */
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.85);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-scale.visible { opacity: 1; transform: scale(1); }
+
+/* Slide from left */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-left.visible { opacity: 1; transform: translateX(0); }
+
+/* Slide from right */
+.reveal-right {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-right.visible { opacity: 1; transform: translateX(0); }
+
+/* --- Hero entrance animations --- */
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes heroGlow {
+  0%, 100% { opacity: 0.08; transform: translate(-50%, -50%) scale(1); }
+  50% { opacity: 0.15; transform: translate(-50%, -50%) scale(1.1); }
+}
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 4px 30px rgba(255,255,255,0.1); }
+  50% { box-shadow: 0 4px 60px rgba(255,255,255,0.2), 0 0 120px rgba(255,255,255,0.05); }
+}
+@keyframes border-glow {
+  0%, 100% { border-color: rgba(255,255,255,0.08); }
+  50% { border-color: rgba(255,255,255,0.2); }
+}
+@keyframes count-pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+/* Particles floating background */
+@keyframes particle-float {
+  0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
+}
+
+/* Hero entrance sequencing */
+.hero-eyecatch {
+  animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+}
+.hero h1 {
+  animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
+}
+.hero-sub {
+  animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both;
+}
+.hero-meta {
+  animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.8s both;
+}
+.hero .cta-btn {
+  animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 1.0s both;
+}
+.hero .cta-sub {
+  animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 1.1s both;
+}
+
+/* Hero background glow animation */
+.hero::before {
+  animation: heroGlow 6s ease-in-out infinite;
+}
+
+/* Highlight text - monotone */
+.hero h1 .highlight {
+  animation: none;
+}
+
+/* CTA button - monotone */
+.cta-btn {
+  animation: none;
+  position: relative;
+  overflow: hidden;
+}
+.cta-btn::before {
+  content: '';
+  position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0,0,0,0.08), transparent);
+  transition: left 0.5s;
+}
+.cta-btn:hover::before {
+  left: 100%;
+}
+
+/* Hero meta items floating */
+.hero-meta-item {
+  animation: border-glow 4s ease-in-out infinite;
+}
+.hero-meta-item:nth-child(2) { animation-delay: 1s; }
+.hero-meta-item:nth-child(3) { animation-delay: 2s; }
+.hero-meta-item:nth-child(4) { animation-delay: 3s; }
+
+/* Review cards hover lift */
+.review-card {
+  transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.review-card:hover {
+  border-color: rgba(255,255,255,0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+}
+
+/* Benefit items hover */
+.benefit-item {
+  transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.benefit-item:hover {
+  border-color: rgba(255,255,255,0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+.benefit-icon {
+  transition: transform 0.3s;
+}
+.benefit-item:hover .benefit-icon {
+  transform: scale(1.15) rotate(5deg);
+}
+
+/* Milestone cards */
+.milestone-card {
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+.milestone-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 50px rgba(0,0,0,0.3);
+  border-color: rgba(255,255,255,0.15);
+}
+.milestone-card h4 {
+  transition: transform 0.3s;
+}
+.milestone-card:hover h4 {
+  animation: count-pulse 0.6s ease-in-out;
+}
+
+/* Support items */
+.support-item {
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+.support-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  border-color: rgba(255,255,255,0.15);
+}
+
+/* Week cards */
+.week-card {
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.week-card:hover {
+  border-color: rgba(255,255,255,0.1);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* FAQ items */
+.faq-item {
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.faq-item:hover {
+  border-color: rgba(255,255,255,0.1);
+}
+
+/* Fit boxes */
+.fit-box {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.fit-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+}
+
+/* Gallery items entrance */
+.gallery-grid .gallery-item {
+  transition: transform 0.5s ease, filter 0.5s ease, box-shadow 0.4s ease;
+}
+.gallery-grid .gallery-item:hover {
+  z-index: 2;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+}
+
+/* Tools table rows */
+.tools-table tbody tr {
+  transition: background 0.3s;
+}
+.tools-table tbody tr:hover {
+  background: rgba(255,255,255,0.03);
+}
+
+/* Divider animation */
+.divider {
+  transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  width: 0;
+}
+.visible .divider,
+.reveal.visible + .reveal .divider {
+  width: 60px;
+}
+
+/* Final CTA glow */
+.final-cta::before {
+  animation: heroGlow 5s ease-in-out infinite;
+}
+
+/* Section heading - monotone */
+.text-gold {
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+  animation: none;
+}
+
+/* Floating particles container */
+.particles {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  pointer-events: none; z-index: 0; overflow: hidden;
+}
+.particle {
+  position: absolute;
+  width: 3px; height: 3px;
+  background: rgba(255,255,255,0.4);
+  border-radius: 50%;
+  opacity: 0;
+  animation: particle-float linear infinite;
+}
+.particle:nth-child(1) { left: 10%; animation-duration: 18s; animation-delay: 0s; width: 2px; height: 2px; }
+.particle:nth-child(2) { left: 25%; animation-duration: 22s; animation-delay: 3s; }
+.particle:nth-child(3) { left: 40%; animation-duration: 20s; animation-delay: 6s; width: 4px; height: 4px; }
+.particle:nth-child(4) { left: 55%; animation-duration: 24s; animation-delay: 2s; width: 2px; height: 2px; }
+.particle:nth-child(5) { left: 70%; animation-duration: 19s; animation-delay: 5s; }
+.particle:nth-child(6) { left: 85%; animation-duration: 21s; animation-delay: 1s; width: 2px; height: 2px; }
+.particle:nth-child(7) { left: 15%; animation-duration: 25s; animation-delay: 8s; width: 4px; height: 4px; }
+.particle:nth-child(8) { left: 60%; animation-duration: 17s; animation-delay: 4s; }
+
+/* Smooth header show on scroll */
+header {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+header.scrolled {
+  box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 640px) {
+  .section { padding: 56px 0; }
+  .hero { padding: 120px 0 60px; }
+  .hero h1 { font-size: 1.5rem; }
+  .cta-btn { font-size: 0.95rem; padding: 16px 32px; }
+  .instructor-box { padding: 28px; }
+  .milestone-grid { grid-template-columns: 1fr; }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal, .reveal-scale, .reveal-left, .reveal-right { opacity: 1; transform: none; }
+  .reveal-stagger > * { opacity: 1; transform: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="container">
+    <div class="logo">
+      <div class="logo-img">
+        <!-- Masayume AIロゴ - 実際のロゴ画像がある場合はimgタグに置き換えてください -->
+        <!-- <img src="masayume-ai-logo.png" alt="Masayume AI"> -->
+        <svg width="36" height="36" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+              <stop offset="50%" style="stop-color:#cccccc;stop-opacity:0.7" />
+              <stop offset="100%" style="stop-color:#999999;stop-opacity:0.8" />
+            </linearGradient>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+              <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+          <!-- 円形の雲のようなデザイン -->
+          <circle cx="25" cy="35" r="12" fill="url(#cloudGrad)" opacity="0.8"/>
+          <circle cx="40" cy="25" r="14" fill="url(#cloudGrad)" opacity="0.7"/>
+          <circle cx="60" cy="25" r="13" fill="url(#cloudGrad)" opacity="0.8"/>
+          <circle cx="75" cy="35" r="11" fill="url(#cloudGrad)" opacity="0.7"/>
+          <circle cx="70" cy="55" r="13" fill="url(#cloudGrad)" opacity="0.8"/>
+          <circle cx="50" cy="65" r="15" fill="url(#cloudGrad)" opacity="0.9"/>
+          <circle cx="30" cy="60" r="12" fill="url(#cloudGrad)" opacity="0.7"/>
+          <circle cx="50" cy="45" r="18" fill="url(#cloudGrad)" opacity="0.6"/>
+          <!-- 中央のMロゴ -->
+          <text x="50" y="52" font-family="Arial, sans-serif" font-size="20" font-weight="900"
+                fill="white" text-anchor="middle" dominant-baseline="middle" filter="url(#glow)">M</text>
+        </svg>
+      </div>
+      <span>Masayume AI</span>
+    </div>
+    <a href="https://amethyst-help-3ba.notion.site/33257854a77280a1b734c50c27ad65d0?source=copy_link" class="header-cta">今すぐ受講する</a>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <p class="hero-eyecatch">AI VIDEO × YOUTUBE MONETIZATION CURRICULUM</p>
+    <h1>AI動画×YouTube広告収益<br><span class="highlight">完全攻略カリキュラム</span></h1>
+    <p class="hero-sub">全12回｜3ヶ月集中プログラムで<br>YouTube収益化達成＋月5万円の広告収益を目指す</p>
+
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <span class="label">受講期間</span>
+        <span class="value">3ヶ月（全12回）</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="label">受講料</span>
+        <span class="value price-value">¥49,800（税込）</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="label">形式</span>
+        <span class="value">オンライン講義</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="label">目標</span>
+        <span class="value">月5万円の広告収益</span>
+      </div>
+    </div>
+
+    <!-- 紹介動画 -->
+    <div class="hero-video">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/UVCzPEUX9j8" title="紹介動画" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <a href="https://amethyst-help-3ba.notion.site/33257854a77280a1b734c50c27ad65d0?source=copy_link" class="cta-btn">
+      ¥49,800（税込）で今すぐ受講する
+      <span class="price">オンライン講義＋週次課題＋個別サポート付き</span>
+    </a>
+    <p class="cta-sub">※ クレジットカード決済対応 ｜ お申し込み後すぐに受講開始できます</p>
+  </div>
+</section>
+
+<!-- ===== PARTICLES ===== -->
+<div class="particles">
+  <div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div>
+  <div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div>
+</div>
+
+<!-- ===== PAIN POINTS (悩み訴求) ===== -->
+<section class="section pain-section">
+  <div class="container">
+    <div class="text-center reveal">
+      <h2 class="pain-heading">こんな<span class="em">悩み</span>、ありませんか？</h2>
+    </div>
+
+    <div class="pain-visual-grid reveal-stagger">
+      <div class="pain-visual-card">
+        <div class="pain-img-wrap">
+          <img src="pic/pain_01.webp" alt="画像生成の失敗に頭を抱えるクリエイター" loading="lazy">
+          <div class="pain-img-overlay">
+            <div class="pain-number">PAIN 01</div>
+            <div class="pain-title">画像生成がうまくいかない</div>
+            <div class="pain-desc">何度プロンプトを試しても崩れた顔、溶けた指... 147回目のエラーに心が折れる</div>
+          </div>
+        </div>
+      </div>
+      <div class="pain-visual-card">
+        <div class="pain-img-wrap">
+          <img src="pic/pain_02.webp" alt="AIっぽい動画に悩むクリエイター" loading="lazy">
+          <div class="pain-img-overlay">
+            <div class="pain-number">PAIN 02</div>
+            <div class="pain-title">動画がどうしても"AIっぽく"なる</div>
+            <div class="pain-desc">不自然な肌、ロボットのような動き... リファレンスと見比べるほど絶望する</div>
+          </div>
+        </div>
+      </div>
+      <div class="pain-visual-card">
+        <div class="pain-img-wrap">
+          <img src="pic/pain_03.webp" alt="再生回数ゼロのYouTube画面を見つめるクリエイター" loading="lazy">
+          <div class="pain-img-overlay">
+            <div class="pain-number">PAIN 03</div>
+            <div class="pain-title">動画を投稿しても全然伸びない</div>
+            <div class="pain-desc">再生数ゼロ、登録者ゼロ。画面に映る無情なグラフに、弁当も喉を通らない</div>
+          </div>
+        </div>
+      </div>
+      <div class="pain-visual-card">
+        <div class="pain-img-wrap">
+          <img src="pic/pain_04.webp" alt="大量のツールに圧倒されるクリエイター" loading="lazy">
+          <div class="pain-img-overlay">
+            <div class="pain-number">PAIN 04</div>
+            <div class="pain-title">ツールが多すぎて何を使えばいいかわからない</div>
+            <div class="pain-desc">Kling、Runway、SDXL、ChatGPT... 画面もデスクも頭の中もカオス状態</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pain-answer reveal">
+      <h3>その悩み、すべてこのプログラムで解決できます。</h3>
+      <p>AI動画の制作から収益化まで、3ヶ月間で体系的に学べるカリキュラム。<br>もう一人で悩む必要はありません。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INTRO (講座紹介 + ギャラリー) ===== -->
+<section class="section">
+  <div class="container" style="max-width: 1100px;">
+    <div class="intro-layout">
+      <!-- LEFT: Text -->
+      <div class="intro-text reveal-left">
+        <span class="badge">ABOUT THIS PROGRAM</span>
+        <h2 class="section-heading">AI動画初心者でも、<br>3ヶ月で収益化を目指せる</h2>
+
+        <p>本プログラムは、AI動画制作の技術を体系的に学び、YouTube広告収益で月5万円以上を目指す3ヶ月間の集中カリキュラムです。</p>
+
+        <p>画像生成・動画生成・音声合成・動画編集・チャンネル運営まで、AIを活用した動画制作のすべてを実践的に習得します。「ツールの使い方」だけではなく「どうやって収益化するか」まで一気通貫で学べるのが最大の特徴です。</p>
+
+        <p>AIの進化により、動画制作のハードルは劇的に下がりました。しかし、ツールを知っているだけでは収益にはつながりません。このプログラムでは、正しい戦略と実践の両輪で「稼げるAI動画チャンネル」を一緒に作り上げます。</p>
+
+        <p>もちろん、AI動画が初めての方でも安心して取り組めるよう、基礎からステップバイステップで進めていきます。</p>
+      </div>
+
+      <!-- RIGHT: Gallery Grid -->
+      <div class="gallery-grid reveal-stagger">
+        <div class="gallery-item"><img src="pic/01_warlord.webp" alt="戦国武将 AI動画"></div>
+        <div class="gallery-item"><img src="pic/02_dark_fantasy.webp" alt="ダークファンタジー"></div>
+        <div class="gallery-item"><img src="pic/03_ronin.webp" alt="和風シネマ"></div>
+        <div class="gallery-item"><img src="pic/04_battle.webp" alt="侍バトル"></div>
+        <div class="gallery-item"><img src="pic/05_helmet.webp" alt="甲冑クローズアップ"></div>
+        <div class="gallery-item"><img src="pic/06_castle.webp" alt="城郭空撮風"></div>
+        <div class="gallery-item"><img src="pic/07_katana.webp" alt="刀剣エフェクト"></div>
+        <div class="gallery-item"><img src="pic/08_war.webp" alt="合戦シーン"></div>
+        <div class="gallery-item"><img src="pic/09_dragon.webp" alt="龍ファンタジー"></div>
+        <div class="gallery-item"><img src="pic/10_sakura.webp" alt="夜桜×武士"></div>
+        <div class="gallery-item"><img src="pic/11_fire.webp" alt="炎エフェクト"></div>
+        <div class="gallery-item"><img src="pic/12_stone.webp" alt="和風タイポ"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA 2 ===== -->
+<div class="cta-block reveal">
+  <p class="urgency">＼ 3ヶ月の集中プログラムで収益化を実現 ／</p>
+  <a href="https://amethyst-help-3ba.notion.site/33257854a77280a1b734c50c27ad65d0?source=copy_link" class="cta-btn">¥49,800（税込）で今すぐ受講する</a>
+  <p class="cta-sub">週1回の講義 ＋ 個別サポート ＋ コミュニティアクセス付き</p>
+</div>
+
+<!-- ===== FIT / UNFIT ===== -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="text-center reveal">
+      <h2 class="section-heading">この講座に向いている人・向かない人</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="fit-grid reveal-stagger">
+      <div class="fit-box good">
+        <h3>✦ こんな方におすすめ</h3>
+        <ul>
+          <li>AI動画を使ってYouTubeで収益を得たい方</li>
+          <li>動画制作の経験はないが、AIの力を借りて始めたい方</li>
+          <li>副業・フリーランスとして新たな収入源を作りたい方</li>
+          <li>すでにチャンネルはあるが、伸び悩んでいる方</li>
+          <li>体系的にAI動画×収益化を学びたい方</li>
+        </ul>
+      </div>
+      <div class="fit-box bad">
+        <h3>✦ こんな方には向きません</h3>
+        <ul>
+          <li>受講するだけで何もせず稼げると思っている方</li>
+          <li>週1回の講義と課題に取り組む時間を確保できない方</li>
+          <li>AIツールの有料プランへの投資を全く考えていない方</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BENEFITS ===== -->
+<section class="section">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="badge">WHAT YOU GET</span>
+      <h2 class="section-heading">参加すると得られるもの</h2>
+      <p class="section-subheading">迷っている時間が、ライバルとの差になる</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="benefits-list reveal-stagger">
+      <div class="benefit-item">
+        <div class="benefit-icon">🎬</div>
+        <div>
+          <h4>AI動画制作スキルを完全習得</h4>
+          <p>画像生成・動画生成・音声合成・編集まで、すべてをカバーする全12回の体系的カリキュラム</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">💰</div>
+        <div>
+          <h4>収益化までの明確なロードマップ</h4>
+          <p>YouTube収益化条件の達成から広告収益の最大化まで、具体的な戦略を学べます</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">📋</div>
+        <div>
+          <h4>台本・サムネ・SEOまで完全対応</h4>
+          <p>動画を作るだけでなく「伸ばす」ためのYouTube運営ノウハウを実践的に習得</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">🤖</div>
+        <div>
+          <h4>最新AIツールを徹底活用</h4>
+          <p>Kling AI、Freepik、ElevenLabs、ChatGPT等、主要ツールの使い方をマスター</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">👤</div>
+        <div>
+          <h4>月1回の個別コンサルティング</h4>
+          <p>あなたのチャンネルに合わせた戦略を1対1でアドバイス</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">⚡</div>
+        <div>
+          <h4>量産体制の構築と自動化</h4>
+          <p>週2〜3本ペースで動画を量産できるAIパイプラインの作り方を伝授</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">🌍</div>
+        <div>
+          <h4>横展開・多角化の戦略</h4>
+          <p>複数チャンネル運営、海外展開、広告以外の収益化手段まで視野を広げます</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">📦</div>
+        <div>
+          <h4>テンプレート・素材を提供</h4>
+          <p>台本テンプレート、プロンプト集、編集テンプレート等、すぐに使える素材付き</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REFRAME + CTA 3 (with video) ===== -->
+<section class="reframe-section reveal">
+  <div class="reframe-video-bg">
+    <video autoplay muted loop playsinline>
+      <source src="pic/火の弓矢-減少.mp4" type="video/mp4">
+    </video>
+    <div class="reframe-overlay"></div>
+  </div>
+  <div class="reframe-content">
+    <h2 class="section-heading">この講座は、単なるスキル習得ではない。<br>あなたの「収益の柱」を作るための<span class="text-gold">"投資"</span>です。</h2>
+    <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 16px auto 28px; max-width: 600px;">3ヶ月後、AI動画の制作から収益化まで自走できるスキルが手に入ります。</p>
+    <a href="https://amethyst-help-3ba.notion.site/33257854a77280a1b734c50c27ad65d0?source=copy_link" class="cta-btn">¥49,800（税込）で今すぐ受講する</a>
+  </div>
+</section>
+
+<!-- ===== 3-PHASE OVERVIEW ===== -->
+<section class="section">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="badge">3-PHASE PROGRAM</span>
+      <h2 class="section-heading">3フェーズで確実にステップアップ</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="milestone-grid reveal-stagger" style="margin-top: 40px;">
+      <div class="milestone-card">
+        <span class="month">PHASE 1</span>
+        <h4>基礎構築期</h4>
+        <p class="kpi">Week 1 - 4</p>
+        <p class="goal">AIツール習得 ＋ 素材量産体制</p>
+        <p style="font-size: 0.82rem; color: var(--text-secondary); margin-top: 8px;">AI画像・動画・音声生成の基本操作を習得し、動画素材を自在に生成できる状態を目指します。</p>
+      </div>
+      <div class="milestone-card">
+        <span class="month">PHASE 2</span>
+        <h4>制作力強化期</h4>
+        <p class="kpi">Week 5 - 8</p>
+        <p class="goal">編集・台本・SEO・サムネ</p>
+        <p style="font-size: 0.82rem; color: var(--text-secondary); margin-top: 8px;">動画編集・台本設計・サムネイル・SEOまで、チャンネル運営に必要なスキルを磨きます。</p>
+      </div>
+      <div class="milestone-card">
+        <span class="month">PHASE 3</span>
+        <h4>収益化・スケール期</h4>
+        <p class="kpi">Week 9 - 12</p>
+        <p class="goal">収益化達成 ＋ 横展開</p>
+        <p style="font-size: 0.82rem; color: var(--text-secondary); margin-top: 8px;">量産体制を構築し、収益化申請から広告収益の最大化・横展開まで実行します。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CURRICULUM DETAIL ===== -->
+<section class="section section-dark" id="curriculum">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="badge">FULL CURRICULUM</span>
+      <h2 class="section-heading">全12回カリキュラム詳細</h2>
+      <p class="section-subheading">各Weekの講義内容をご確認いただけます</p>
+      <div class="divider"></div>
+    </div>
+
+    <!-- PHASE 1 -->
+    <div class="phase-header">
+      <span class="phase-num">PHASE 1</span>
+      <div>
+        <h3>基礎構築期</h3>
+        <p class="phase-desc">Week 1-4</p>
+      </div>
+    </div>
+    <div class="phase-visual reveal-scale"><img src="pic/phese-1-1-1.webp" alt="PHASE 1: 基礎構築期 - 完璧な素材を生み出すデジタルアトリエの構築"></div>
+
+    <div class="week-card">
+      <button class="week-toggle" onclick="this.parentElement.classList.toggle('open')">
+        <span>Week 1｜AI動画の全体像とYouTube収益化の仕組み</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="week-body">
+        <h5>到達目標</h5>
+        <ul>
+          <li>AI動画で収益を上げる全体像を理解する</li>
+          <li>YouTubeの収益化条件（登録者1,000人・再生4,000時間）を知る</li>
+          <li>どのジャンルが収益化に向いているかを把握する</li>
+        </ul>
+        <h5>講義内容</h5>
+        <ul>
+          <li>AI動画×YouTube収益化のビジネスモデル解説</li>
+          <li>収益化までのロードマップ提示（3ヶ月計画）</li>
+          <li>ジャンル選定の考え方（歴史・動物・雑学・ライフハック等）</li>
+          <li>競合チャンネルのリサーチ方法</li>
+          <li>チャンネル開設・初期設定の最適化</li>
+        </ul>
+        <div class="task"><strong>課題：</strong>ジャンル・コンセプトを決定し、チャンネルを開設する</div>
+      </div>
+    </div>
+
+    <div class="week-card">
+      <button class="week-toggle" onclick="this.parentElement.classList.toggle('open')">
+        <span>Week 2｜AIツール導入と画像生成の基礎</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="week-body">
+        <h5>到達目標</h5>
+        <ul>
+          <li>必要なAIツールを全てセットアップする</li>
+          <li>プロンプトの基本構造を理解する</li>
+          <li>狙った画像を生成できるようになる</li>
+        </ul>
+        <h5>講義内容</h5>
+        <ul>
+          <li>必須ツール一覧と導入手順（Freepik AI / NanoBanana Pro等）</li>
+          <li>画像生成プロンプトの基本構造（主題・スタイル・品質・構図）</li>
+          <li>ネガティブプロンプトの使い方</li>
+          <li>シード値・パラメータの調整テクニック</li>
+          <li>キャラクター一貫性を保つ方法（参照画像・IP Adapter）</li>
+        </ul>
+        <div class="task"><strong>課題：</strong>自分のジャンルに合った画像を20枚生成する</div>
+      </div>
+    </div>
+
+    <div class="week-card">
+      <button class="week-toggle" onclick="this.parentElement.classList.toggle('open')">
+        <span>Week 3｜AI動画生成の基礎（画像→動画変換）</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="week-body">
+        <h5>到達目標</h5>
+        <ul>
+          <li>静止画からAI動画を生成できるようになる</li>
+          <li>モーション指示の書き方を習得する</li>
+          <li>動画生成ツールの使い分けを理解する</li>
+        </ul>
+        <h5>講義内容</h5>
+        <ul>
+          <li>AI動画生成ツールの比較と選び方（Kling AI / Freepik Spaces等）</li>
+          <li>Image to Videoの基本ワークフロー</li>
+          <li>モーションプロンプトの書き方（カメラワーク・被写体の動き）</li>
+          <li>生成結果の品質判定と再生成の判断基準</li>
+          <li>バッチ生成で効率的に素材を量産する方法</li>
+        </ul>
+        <div class="task"><strong>課題：</strong>生成した画像から10本のAI動画クリップを作成する</div>
+      </div>
+    </div>
+
+    <div class="week-card">
+      <button class="week-toggle" onclick="this.parentElement.classList.toggle('open')">
+        <span>Week 4｜AI音声・ナレーション生成</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="week-body">
+        <h5>到達目標</h5>
+        <ul>
+          <li>AIナレーションを生成できるようになる</li>
+          <li>声質・トーンの選び方を理解する</li>
+          <li>台本からナレーション完成までの流れを確立する</li>
+        </ul>
+        <h5>講義内容</h5>
+        <ul>
+          <li>AI音声ツールの導入と比較（ElevenLabs / VOICEVOX）</li>
+          <li>ナレーション向け台本の書き方</li>
+          <li>声質カスタマイズとクローン機能の活用</li>
+          <li>感情表現・間の取り方の調整テクニック</li>
+          <li>BGM・効果音の選定と著作権の注意点</li>
+        </ul>
+        <div class="task"><strong>課題：</strong>台本を書き、AIナレーション音声を3本完成させる</div>
+      </div>
+    </div>
+
+    <!-- PHASE 2 -->
+    <div class="phase-header">
+      <span class="phase-num">PHASE 2</span>
+      <div>
+        <h3>制作力強化期</h3>
+        <p class="phase-desc">Week 5-8</p>
+      </div>
+    </div>
+    <div class="phase-visual reveal-scale"><img src="pic/phese-1-1-2.webp" alt="PHASE 2: 制作力強化期 - アルゴリズムと視聴者心理をハックする番組制作"></div>
+
+    <div class="week-card">
+      <button class="week-toggle" onclick="this.parentElement.classList.toggle('open')">
+        <span>Week 5｜動画編集の基礎（CapCut実践）</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="week-body">
+        <h5>到達目標</h5>
+        <ul>
+          <li>AI素材を使った動画編集の基本を身につける</li>
+          <li>テロップ・トランジションの効果的な使い方を覚える</li>
+          <li>視聴維持率を意識した編集術を理解する</li>
+        </ul>
+        <h5>講義内容</h5>
+        <ul>
+          <li>CapCutの基本操作と効率的なワークフロー</li>
+          <li>AI素材の配置・タイミング調整</li>
+          <li>テロップデザインとフォント選び</li>
+          <li>トランジション・エフェクトの活用</li>
+          <li>BGMとナレーションのミキシング</li>
+          <li>書き出し設定（YouTube最適化）</li>
+        </ul>
+        <div class="task"><strong>課題：</strong>AI素材を使った5〜8分のYouTube動画を1本完成させる</div>
+      </div>
+    </div>
+
+    <div class="week-card">
+      <button class="week-toggle" onclick="this.parentElement.classList.toggle('open')">
+        <span>Week 6｜台本設計とストーリーテリング</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="week-body">
+        <h5>到達目標</h5>
+        <ul>
+          <li>視聴者を引き込む台本構成を作れるようになる</li>
+          <li>冒頭30秒で離脱させないテクニックを習得する</li>
+          <li>シリーズ化を見据えた企画設計ができるようになる</li>
+        </ul>
+        <h5>講義内容</h5>
+        <ul>
+          <li>YouTube動画の台本テンプレート（HOOK→展開→クライマックス→CTA）</li>
+          <li>冒頭30秒の黄金パターン（疑問提示・衝撃事実・共感）</li>
+          <li>ChatGPT / Claudeを活用した台本生成ワークフロー</li>
+          <li>リサーチから台本完成までの効率化手順</li>
+          <li>シリーズ企画で視聴者をリピーターにする方法</li>
+        </ul>
+        <div class="task"><strong>課題：</strong>テンプレートに沿って3本分の台本を完成させる</div>
+      </div>
+    </div>
+
+    <div class="week-card">
+      <button class="week-toggle" onclick="this.parentElement.classList.toggle('open')">
+        <span>Week 7｜サムネイル戦略とCTR最適化</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="week-body">
+        <h5>到達目標</h5>
+        <ul>
+          <li>クリックされるサムネイルの法則を理解する</li>
+          <li>AIを使ったサムネイル制作フローを確立する</li>
+          <li>タイトルとサムネの相乗効果を生む方法を学ぶ</li>
+        </ul>
+        <h5>講義内容</h5>
+        <ul>
+          <li>高CTRサムネイルの共通パターン分析</li>
+          <li>AI画像生成×Canvaでのサムネイル制作実践</li>
+          <li>色彩心理とコントラストの活用</li>
+          <li>タイトル設計の公式（数字・疑問・感情ワード）</li>
+          <li>A/Bテストの考え方と改善サイクル</li>
+        </ul>
+        <div class="task"><strong>課題：</strong>過去動画のサムネイルを3パターンずつ作り直す</div>
+      </div>
+    </div>
+
+    <div class="week-card">
+      <button class="week-toggle" onclick="this.parentElement.classList.toggle('open')">
+        <span>Week 8｜YouTube SEOとアルゴリズム攻略</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="week-body">
+        <h5>到達目標</h5>
+        <ul>
+          <li>YouTube検索で上位表示される動画の作り方を学ぶ</li>
+          <li>アルゴリズムに好まれる投稿戦略を理解する</li>
+          <li>アナリティクスの見方と改善ポイントを把握する</li>
+        </ul>
+        <h5>講義内容</h5>
+        <ul>
+          <li>YouTubeアルゴリズムの仕組み（推薦・検索・関連動画）</li>
+          <li>キーワードリサーチの手法と実践</li>
+          <li>タグ・説明文・チャプターの最適化</li>
+          <li>投稿タイミングと頻度の最適解</li>
+          <li>アナリティクス読み解き実践（CTR・視聴維持率・インプレッション）</li>
+        </ul>
+        <div class="task"><strong>課題：</strong>過去動画のSEO最適化を実施し、新規動画を2本投稿する</div>
+      </div>
+    </div>
+
+    <!-- PHASE 3 -->
+    <div class="phase-header">
+      <span class="phase-num">PHASE 3</span>
+      <div>
+        <h3>収益化・スケール期</h3>
+        <p class="phase-desc">Week 9-12</p>
+      </div>
+    </div>
+    <div class="phase-visual reveal-scale"><img src="pic/phese-1-1-3.webp" alt="PHASE 3: 収益化・スケール期 - 1つの成功を資産に変え、自動化と横展開へ"></div>
+
+    <div class="week-card">
+      <button class="week-toggle" onclick="this.parentElement.classList.toggle('open')">
+        <span>Week 9｜量産体制の構築と自動化</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="week-body">
+        <h5>到達目標</h5>
+        <ul>
+          <li>週2〜3本ペースで動画を量産できる体制を作る</li>
+          <li>AIパイプラインの自動化で制作時間を短縮する</li>
+          <li>外注・チーム化の基礎を理解する</li>
+        </ul>
+        <h5>講義内容</h5>
+        <ul>
+          <li>AI動画制作パイプラインの全体設計</li>
+          <li>バッチ処理による画像・動画の一括生成</li>
+          <li>テンプレート化で編集時間を半減させる方法</li>
+          <li>Freepik Spaces等を活用した自動化ワークフロー</li>
+          <li>外注化のタイミングと発注マニュアルの作り方</li>
+        </ul>
+        <div class="task"><strong>課題：</strong>自動化パイプラインを構築し、1週間で3本の動画を完成させる</div>
+      </div>
+    </div>
+
+    <div class="week-card">
+      <button class="week-toggle" onclick="this.parentElement.classList.toggle('open')">
+        <span>Week 10｜収益化申請と広告収益の最大化</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="week-body">
+        <h5>到達目標</h5>
+        <ul>
+          <li>収益化審査をスムーズに通過するための準備をする</li>
+          <li>広告単価（RPM）を上げるテクニックを学ぶ</li>
+          <li>AI動画の著作権・収益化ポリシーを正しく理解する</li>
+        </ul>
+        <h5>講義内容</h5>
+        <ul>
+          <li>収益化申請の手順と審査のチェックポイント</li>
+          <li>AI生成コンテンツのYouTubeポリシー最新情報</li>
+          <li>RPMを上げるジャンル・動画尺・構成の工夫</li>
+          <li>ミッドロール広告の最適配置</li>
+          <li>「繰り返しの多いコンテンツ」判定を避ける方法</li>
+          <li>著作権トラブルの予防策</li>
+        </ul>
+        <div class="task"><strong>課題：</strong>収益化チェックリストを確認し、チャンネルを審査に備える</div>
+      </div>
+    </div>
+
+    <div class="week-card">
+      <button class="week-toggle" onclick="this.parentElement.classList.toggle('open')">
+        <span>Week 11｜マルチ収益化と横展開戦略</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="week-body">
+        <h5>到達目標</h5>
+        <ul>
+          <li>広告収益以外のマネタイズ手段を理解する</li>
+          <li>1チャンネルの成功を横展開する方法を学ぶ</li>
+          <li>長期的に安定した収益構造を設計する</li>
+        </ul>
+        <h5>講義内容</h5>
+        <ul>
+          <li>収益の多角化（広告・アフィリエイト・コンサル・商品販売）</li>
+          <li>ショート動画×TikTok/Reelsでの追加収益</li>
+          <li>海外向けチャンネル展開（英語ナレーション活用）</li>
+          <li>複数チャンネル運営の戦略と注意点</li>
+          <li>コンサルティング・コミュニティ運営への発展</li>
+        </ul>
+        <div class="task"><strong>課題：</strong>横展開プランを1つ策定し、実行に移す</div>
+      </div>
+    </div>
+
+    <div class="week-card">
+      <button class="week-toggle" onclick="this.parentElement.classList.toggle('open')">
+        <span>Week 12｜総まとめ・卒業制作・今後の戦略設計</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="week-body">
+        <h5>到達目標</h5>
+        <ul>
+          <li>3ヶ月間の学びを体系的に振り返る</li>
+          <li>自走できる制作・運営体制を完成させる</li>
+          <li>卒業後6ヶ月のアクションプランを策定する</li>
+        </ul>
+        <h5>講義内容</h5>
+        <ul>
+          <li>全12回の振り返りと成果発表</li>
+          <li>卒業制作：高品質AI動画の制作・公開</li>
+          <li>個別チャンネル診断とフィードバック</li>
+          <li>卒業後6ヶ月ロードマップの策定</li>
+          <li>最新AI動画ツールのトレンドと今後の展望</li>
+          <li>質疑応答・個別相談</li>
+        </ul>
+        <div class="task"><strong>課題：</strong>6ヶ月アクションプランを完成させ、実行を開始する</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== REVIEWS (社会的証明) ===== -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="badge">受講者の声</span>
+      <h2 class="section-heading">すでに成果を出している<br>受講者たち</h2>
+    </div>
+
+    <div class="testimonials-list reveal-stagger">
+
+      <!-- 受講者1: 会社員Sさん -->
+      <div class="testimonial-item">
+        <div class="testimonial-video">
+          <video controls preload="metadata" poster="">
+            <source src="pic/実績動画sakura_compressed.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="testimonial-content">
+          <div class="testimonial-badge">CASE 01</div>
+          <h3 class="testimonial-heading">AI動画で<span class="highlight">収益化達成</span>！！</h3>
+          <p class="testimonial-body">
+            <strong>会社員Sさん</strong>　完全初心者・片手間で YouTube収益化を達成。チャンネルも全公開中。
+          </p>
+        </div>
+      </div>
+
+      <!-- 受講者2: 会社員Iさん -->
+      <div class="testimonial-item">
+        <div class="testimonial-video">
+          <video controls preload="metadata" poster="">
+            <source src="pic/りゅうじさんLINE告知動画のコピー_compressed.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="testimonial-content">
+          <div class="testimonial-badge">CASE 02</div>
+          <h3 class="testimonial-heading">会社員Iさん <span class="highlight">月2万 → 月14万</span> わずか3ヶ月の変化</h3>
+          <p class="testimonial-body">
+            <strong>会社員Iさんの実績</strong>　1ヶ月目：23,000円　2ヶ月目：30,000円　3ヶ月目：140,000円
+            <span class="result-line">——たった3ヶ月で6倍に</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- 受講者3: 講師業 -->
+      <div class="testimonial-item">
+        <div class="testimonial-video">
+          <iframe src="https://www.youtube.com/embed/UkrAjIt07w0" title="講師業×YouTube 実績動画" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="testimonial-content">
+          <div class="testimonial-badge">CASE 03</div>
+          <h3 class="testimonial-heading"><span class="highlight">講師業の傍ら</span>で達成</h3>
+          <p class="testimonial-body">
+            <strong>講師業×YouTube</strong><br>
+            <span class="check">✓</span>完全初心者からスタート
+            <span class="check">✓</span>本業の片手間で運営<br>
+            <span class="check">✓</span>収益化達成
+            <span class="check">✓</span>チャンネル全公開
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== TOOLS TABLE ===== -->
+<section class="section">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="badge">TOOLS</span>
+      <h2 class="section-heading">使用ツール一覧</h2>
+      <div class="divider"></div>
+    </div>
+
+    <table class="tools-table reveal">
+      <thead>
+        <tr><th>カテゴリ</th><th>ツール</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>画像生成</td><td>Freepik AI / NanoBanana Pro</td></tr>
+        <tr><td>動画生成</td><td>Kling AI / Freepik Spaces</td></tr>
+        <tr><td>音声合成</td><td>ElevenLabs / VOICEVOX</td></tr>
+        <tr><td>台本生成</td><td>ChatGPT / Claude</td></tr>
+        <tr><td>動画編集</td><td>CapCut / DaVinci Resolve</td></tr>
+        <tr><td>サムネイル</td><td>Canva / AI画像生成ツール</td></tr>
+        <tr><td>分析・SEO</td><td>YouTube Analytics</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ===== MILESTONES ===== -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="badge">MILESTONES</span>
+      <h2 class="section-heading">マイルストーン＆KPI</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="milestone-grid reveal-stagger">
+      <div class="milestone-card">
+        <span class="month">1ヶ月目</span>
+        <h4>動画10本</h4>
+        <p class="kpi">制作・投稿完了</p>
+        <p class="goal">登録者 100人</p>
+        <p style="font-size: 0.82rem; color: var(--text-secondary); margin-top: 8px;">AI素材の量産体制確立</p>
+      </div>
+      <div class="milestone-card">
+        <span class="month">2ヶ月目</span>
+        <h4>動画30本</h4>
+        <p class="kpi">制作・投稿完了</p>
+        <p class="goal">登録者 500人</p>
+        <p style="font-size: 0.82rem; color: var(--text-secondary); margin-top: 8px;">週2本ペースの安定投稿</p>
+      </div>
+      <div class="milestone-card">
+        <span class="month">3ヶ月目</span>
+        <h4>動画50本</h4>
+        <p class="kpi">制作・投稿完了</p>
+        <p class="goal">収益化条件達成</p>
+        <p style="font-size: 0.82rem; color: var(--text-secondary); margin-top: 8px;">自走可能な運営体制完成</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA 4 ===== -->
+<div class="cta-block reveal">
+  <p class="urgency">＼ AI動画×収益化を体系的に学ぶ唯一のプログラム ／</p>
+  <a href="https://amethyst-help-3ba.notion.site/33257854a77280a1b734c50c27ad65d0?source=copy_link" class="cta-btn">¥49,800（税込）で今すぐ受講する</a>
+  <p class="cta-sub">全12回の講義 ＋ 個別コンサル ＋ テンプレート・素材付き</p>
+</div>
+
+<!-- ===== SUPPORT ===== -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="badge">SUPPORT</span>
+      <h2 class="section-heading">充実のサポート体制</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="support-grid reveal-stagger">
+      <div class="support-item">
+        <h4>📹 週1回オンライン講義</h4>
+        <p>毎週決まった曜日・時間にZoomで生配信。アーカイブ視聴も可能です。</p>
+      </div>
+      <div class="support-item">
+        <h4>💬 チャットサポート</h4>
+        <p>LINE / Discord等で講師に質問し放題。原則48時間以内に回答します。</p>
+      </div>
+      <div class="support-item">
+        <h4>📝 週次課題レビュー</h4>
+        <p>提出された課題に個別フィードバックを返却。改善ポイントを具体的に指導します。</p>
+      </div>
+      <div class="support-item">
+        <h4>🎯 月1回 個別コンサル</h4>
+        <p>1対1のZoom面談でチャンネル戦略を個別にアドバイスします。</p>
+      </div>
+      <div class="support-item">
+        <h4>👥 コミュニティ参加</h4>
+        <p>受講生同士で情報交換・切磋琢磨できるコミュニティへのアクセス権を付与。</p>
+      </div>
+      <div class="support-item">
+        <h4>📦 テンプレート・素材</h4>
+        <p>台本テンプレート・プロンプト集・編集テンプレート等をすべて提供します。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INSTRUCTOR ===== -->
+<section class="section">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="badge">INSTRUCTOR</span>
+      <h2 class="section-heading">講師プロフィール</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="instructor-box reveal-scale">
+      <div class="instructor-photo"><img src="pic/masayume_profile.webp" alt="Masayume" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
+      <div class="instructor-info">
+        <h3>Masayume</h3>
+        <p class="title">AIクリエイター / マーケター</p>
+        <p>最高年商1.5億円を達成。完全初心者から月収100万円達成者を多数輩出してきた実績を持つ。現在は企業から毎月30件以上のAIコンテンツ制作依頼が殺到中。</p>
+        <p>2026年3月にYouTube広告収益20万円を達成。個別コンサルティングおよびコミュニティ運営の指導実績は8年に及ぶ。映像制作ではPremiere Pro、DaVinci Resolve、After Effectsを駆使し、AI動画と従来の編集技術を融合させたクリエイティブを得意とする。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="badge">FAQ</span>
+      <h2 class="section-heading">よくある質問</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div style="margin-top: 40px;">
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span>Q：AI動画の経験がゼロですが、ついていけますか？</span>
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          <p>A：全く問題ありません。本プログラムはAI動画初心者の方を対象に設計されており、ツールの導入からステップバイステップで進めます。わからないことはチャットサポートや個別コンサルでいつでもご質問いただけます。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span>Q：受講料以外に費用はかかりますか？</span>
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          <p>A：講義で使用するAIツールの中には有料プランが必要なものがあります（月額数千円程度）。無料で使えるツールも多数ありますが、より高品質な成果を得るためには一部有料ツールへの投資をおすすめしています。詳細は講義内でご案内します。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span>Q：AIツールの費用はどれぐらいかかりますか？</span>
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          <p>A：1000円からスタートできます。本格的に動画生成をしていき、1ヶ月に10分の動画を4本作るのであれば10000円ぐらいの予算のイメージです。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span>Q：本当に3ヶ月で収益化できますか？</span>
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          <p>A：YouTube収益化条件（登録者1,000人・再生4,000時間）の達成は、ジャンル選定や投稿頻度によって個人差があります。3ヶ月で条件達成、もしくは条件達成に近い状態を目指すカリキュラムとなっていますが、成果を保証するものではありません。ただし、カリキュラムに沿って実践いただければ、収益化に必要なスキルと体制は確実に身につきます。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span>Q：週にどれくらいの時間が必要ですか？</span>
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          <p>A：講義が週1回（約1〜1.5時間）に加え、課題と動画制作で週5〜10時間ほどを想定しています。副業の方でも取り組める設計ですが、投稿本数を増やしたい方はより多くの時間を割いていただくと成果が出やすくなります。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span>Q：講義のアーカイブ視聴は可能ですか？</span>
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          <p>A：はい、すべての講義は録画され、アーカイブとしていつでもご視聴いただけます。リアルタイムで参加できない週があっても安心です。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span>Q：AI生成コンテンツでYouTubeの収益化は問題ありませんか？</span>
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          <p>A：YouTubeはAI生成コンテンツ自体を禁止していませんが、「繰り返しの多いコンテンツ」等のポリシー違反には注意が必要です。本講座では最新のYouTubeポリシーを踏まえた上で、収益化審査に通るための制作方法を詳しくお伝えします。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span>Q：支払い方法を教えてください。</span>
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          <p>A：クレジットカード決済に対応しております（VISA / Mastercard / JCB / American Express）。分割払いについてはお問い合わせください。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span>Q：返金保証はありますか？</span>
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          <p>A：お申し込み後の返金およびキャンセルはお受けしておりません。内容をしっかりとご確認の上、ご理解いただいた上でお申し込みください。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final-cta" id="cta-final">
+  <div class="container" style="position: relative; z-index: 1;">
+    <h2>AIの力で、あなただけの<br>動画チャンネルを<span class="text-gold">収益化</span>しましょう。</h2>
+    <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 32px;">3ヶ月後、動画制作のプロとして自走できる自分に出会えます。</p>
+    <a href="https://amethyst-help-3ba.notion.site/33257854a77280a1b734c50c27ad65d0?source=copy_link" class="cta-btn">
+      ¥49,800（税込）で今すぐ受講する
+      <span class="price">全12回講義＋個別サポート＋コミュニティアクセス</span>
+    </a>
+    <p class="cta-sub">※ お申し込み後すぐに受講を開始できます</p>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <p>&copy; AI動画×YouTube広告収益 完全攻略カリキュラム</p>
+    <nav>
+      <a href="#">お問い合わせ</a>
+      <a href="#">利用規約</a>
+      <a href="#">プライバシーポリシー</a>
+      <a href="#">特定商取引法に基づく表記</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+// ===== Scroll Reveal with Intersection Observer =====
+document.addEventListener('DOMContentLoaded', () => {
+  const revealEls = document.querySelectorAll('.reveal, .reveal-stagger, .reveal-scale, .reveal-left, .reveal-right');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -60px 0px'
+  });
+
+  revealEls.forEach(el => observer.observe(el));
+
+  // ===== Header scroll effect =====
+  const header = document.querySelector('header');
+  let lastScroll = 0;
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll > 100) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+    lastScroll = currentScroll;
+  }, { passive: true });
+
+  // ===== Smooth counter animation for milestone numbers =====
+  const milestoneCards = document.querySelectorAll('.milestone-card h4');
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const text = el.textContent;
+        const match = text.match(/(\d+)/);
+        if (match) {
+          const target = parseInt(match[1]);
+          const prefix = text.split(match[1])[0];
+          const suffix = text.split(match[1])[1];
+          let current = 0;
+          const step = Math.ceil(target / 40);
+          const interval = setInterval(() => {
+            current += step;
+            if (current >= target) {
+              current = target;
+              clearInterval(interval);
+            }
+            el.textContent = prefix + current + suffix;
+          }, 30);
+        }
+        counterObserver.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+  milestoneCards.forEach(el => counterObserver.observe(el));
+
+  // ===== Parallax on hero background =====
+  const hero = document.querySelector('.hero');
+  window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    if (scrolled < window.innerHeight) {
+      hero.style.setProperty('--parallax', scrolled * 0.3 + 'px');
+    }
+  }, { passive: true });
+});
+</script>
+
+</body>
+</html>
